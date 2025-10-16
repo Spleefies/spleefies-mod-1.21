@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "spleefies-mod",
+	"version": "${version}",
+	"name": "Spleefies' mod",
+	"description": "Spleefies' First Mod",
+	"authors": [
+		"Spleefies!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC-BY-NC-SA-4.0",
+	"icon": "assets/spleefies-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.spleefies.spleefies_mod.SpleefiesMod"
+		],
+		"fabric-datagen": [
+			"net.spleefies.spleefies_mod.SpleefiesModDataGenerator"
+		],
+        "client": [
+            "net.spleefies.spleefies_mod.SpleefiesModClient"
+        ]
+	},
+	"mixins": [
+		"spleefies-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
